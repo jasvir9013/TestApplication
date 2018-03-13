@@ -22,4 +22,27 @@
     NSLog(@"name : %@",personName);
     NSLog(@"age : %@",personAge);
 }
+
+// category eg
+
+-(id)init
+{
+    self = [super init];
+    if (self) {
+        _friends = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+-(void)sayHello
+{
+    NSLog(@"Say Hello to %@", _name);
+}
+
+-(void)sayGoodBye
+{
+    NSLog(@"Say goodbye to %@", _name);
+}
+
+
 @end

@@ -10,10 +10,19 @@
 
 @interface Person : NSObject
 {
+    // inheritance eg
     NSString *personName;
     NSString *personAge;
 }
 
 -(id)initWithName:(NSString*)name andAge:(NSString*)age;
 -(void)print;
+
+// category eg
+@property(readonly) NSMutableArray *friends;
+@property(copy) NSString *name;
+
+-(void)sayHello;
+-(void)sayGoodBye;
+
 @end
