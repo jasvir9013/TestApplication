@@ -32,6 +32,8 @@
 		C36CC85F1EF0F8A200AA1804 /* TestApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C36CC85E1EF0F8A200AA1804 /* TestApplicationTests.m */; };
 		C36CC86A1EF0F8A200AA1804 /* TestApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C36CC8691EF0F8A200AA1804 /* TestApplicationUITests.m */; };
 		C37084FE1FF4B8D900C3A2A2 /* AlphaNumericSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37084FD1FF4B8D900C3A2A2 /* AlphaNumericSortVC.m */; };
+		C38F631C205660DE00519C04 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F631B205660DE00519C04 /* BlockVC.m */; };
+		C38F631F205661E400519C04 /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F631E205661E400519C04 /* SampleClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		C36CC86B1EF0F8A200AA1804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C37084FC1FF4B8D800C3A2A2 /* AlphaNumericSortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaNumericSortVC.h; sourceTree = "<group>"; };
 		C37084FD1FF4B8D900C3A2A2 /* AlphaNumericSortVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaNumericSortVC.m; sourceTree = "<group>"; };
+		C38F631A205660DE00519C04 /* BlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
+		C38F631B205660DE00519C04 /* BlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
+		C38F631D205661E400519C04 /* SampleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleClass.h; sourceTree = "<group>"; };
+		C38F631E205661E400519C04 /* SampleClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +242,7 @@
 		C36CC8431EF0F8A200AA1804 /* TestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				C38F6318205660AF00519C04 /* Block */,
 				C35B6E552053ED840097BF8B /* Polymorphism */,
 				C35B6E4B2053D9070097BF8B /* Inheritance */,
 				C35B6E412053A76E0097BF8B /* Encapsulation */,
@@ -279,6 +286,17 @@
 				C36CC86B1EF0F8A200AA1804 /* Info.plist */,
 			);
 			path = TestApplicationUITests;
+			sourceTree = "<group>";
+		};
+		C38F6318205660AF00519C04 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				C38F631A205660DE00519C04 /* BlockVC.h */,
+				C38F631B205660DE00519C04 /* BlockVC.m */,
+				C38F631D205661E400519C04 /* SampleClass.h */,
+				C38F631E205661E400519C04 /* SampleClass.m */,
+			);
+			name = Block;
 			sourceTree = "<group>";
 		};
 		D2A322F0C9243F304EAB15AF /* Frameworks */ = {
@@ -493,6 +511,7 @@
 			files = (
 				C3356B52200734230052D1D1 /* ScanReceiptVC.m in Sources */,
 				C348D38B1FEBCFFE00BC320C /* SortVC.m in Sources */,
+				C38F631C205660DE00519C04 /* BlockVC.m in Sources */,
 				C35B6E442053A7EE0097BF8B /* adder.m in Sources */,
 				C36CC84C1EF0F8A200AA1804 /* ViewController.m in Sources */,
 				C35B6E5B2053EDE40097BF8B /* Square.m in Sources */,
@@ -506,6 +525,7 @@
 				C3359D6B200DAFF500E6E95D /* ScanReceiptModel.m in Sources */,
 				C3378B81200C88BA00ED86A8 /* ScanResultVC.m in Sources */,
 				C35B6E582053EDC60097BF8B /* Shape.m in Sources */,
+				C38F631F205661E400519C04 /* SampleClass.m in Sources */,
 				C37084FE1FF4B8D900C3A2A2 /* AlphaNumericSortVC.m in Sources */,
 				C35B6E5E2053EDF70097BF8B /* Rectangle.m in Sources */,
 				C35B6E542053D9640097BF8B /* Employee.m in Sources */,
@@ -655,7 +675,7 @@
 				DEVELOPMENT_TEAM = 6J3XW3523T;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestApplication/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectual.BikeTourApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -670,7 +690,7 @@
 				DEVELOPMENT_TEAM = 6J3XW3523T;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestApplication/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.effectual.BikeTourApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

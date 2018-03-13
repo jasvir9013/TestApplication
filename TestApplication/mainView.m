@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    _itemsArray = @[@"Revers String",@"Numeric Sort",@"Alphanumeric Sort",@"Scan"];
+    _itemsArray = @[@"Revers String",@"Numeric Sort",@"Alphanumeric Sort",@"Scan",@"Block"];
     
     // Do any additional setup after loading the view.
 }
