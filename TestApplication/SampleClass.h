@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Print.h"
 typedef void(^CompletionBlock)();
-@interface SampleClass : NSObject
+
+@interface SampleClass : NSObject <printProtocolDelegate>
 
 -(void)performActionWithCompletion:(CompletionBlock)completionBlock;
+
+-(void)startAction;
 @end

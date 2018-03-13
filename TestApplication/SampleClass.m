@@ -15,4 +15,19 @@
     NSLog(@"Action Performed");
     completionBlock();
 }
+
+-(void)startAction
+{
+    Print *print = [[Print alloc]init];
+    [print setDelegate:self];
+    [print printDetails];
+}
+
+#pragma mark print cless delegate
+
+-(void)processCompleted
+{
+    NSLog(@"Printing Process Completed");
+
+}
 @end

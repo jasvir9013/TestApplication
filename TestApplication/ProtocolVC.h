@@ -1,5 +1,5 @@
 //
-//  CategoryVC.h
+//  ProtocolVC.h
 //  TestApplication
 //
 //  Created by Administrator on 13/03/18.
@@ -7,12 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SampleClass.h"
 
-@interface CategoryVC : UIViewController
+@interface ProtocolVC : UIViewController
 
 @end
-
-// extension eg
-
-@interface CategoryVC()
--(void)privateMethod;

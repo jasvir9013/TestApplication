@@ -14,6 +14,8 @@
 		C3359D6B200DAFF500E6E95D /* ScanReceiptModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3359D6A200DAFF500E6E95D /* ScanReceiptModel.m */; };
 		C33779142057892C009E9EC8 /* Person+Relations.m in Sources */ = {isa = PBXBuildFile; fileRef = C33779132057892C009E9EC8 /* Person+Relations.m */; };
 		C337791720579A97009E9EC8 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C337791620579A97009E9EC8 /* CategoryVC.m */; };
+		C337791B2057F785009E9EC8 /* Print.m in Sources */ = {isa = PBXBuildFile; fileRef = C337791A2057F785009E9EC8 /* Print.m */; };
+		C337791E2057FB58009E9EC8 /* ProtocolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C337791D2057FB58009E9EC8 /* ProtocolVC.m */; };
 		C3378B81200C88BA00ED86A8 /* ScanResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3378B80200C88BA00ED86A8 /* ScanResultVC.m */; };
 		C348D38B1FEBCFFE00BC320C /* SortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C348D38A1FEBCFFE00BC320C /* SortVC.m */; };
 		C35B6E442053A7EE0097BF8B /* adder.m in Sources */ = {isa = PBXBuildFile; fileRef = C35B6E432053A7EE0097BF8B /* adder.m */; };
@@ -70,6 +72,10 @@
 		C33779132057892C009E9EC8 /* Person+Relations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Relations.m"; sourceTree = "<group>"; };
 		C337791520579A97009E9EC8 /* CategoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
 		C337791620579A97009E9EC8 /* CategoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryVC.m; sourceTree = "<group>"; };
+		C33779192057F785009E9EC8 /* Print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
+		C337791A2057F785009E9EC8 /* Print.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Print.m; sourceTree = "<group>"; };
+		C337791C2057FB58009E9EC8 /* ProtocolVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolVC.h; sourceTree = "<group>"; };
+		C337791D2057FB58009E9EC8 /* ProtocolVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolVC.m; sourceTree = "<group>"; };
 		C3378B7F200C88BA00ED86A8 /* ScanResultVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultVC.h; sourceTree = "<group>"; };
 		C3378B80200C88BA00ED86A8 /* ScanResultVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultVC.m; sourceTree = "<group>"; };
 		C348D3891FEBCFFE00BC320C /* SortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortVC.h; sourceTree = "<group>"; };
@@ -166,6 +172,17 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
+		C33779182057F1D6009E9EC8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C33779192057F785009E9EC8 /* Print.h */,
+				C337791A2057F785009E9EC8 /* Print.m */,
+				C337791C2057FB58009E9EC8 /* ProtocolVC.h */,
+				C337791D2057FB58009E9EC8 /* ProtocolVC.m */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 		C348D3861FEB964C00BC320C /* Reverse */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +276,7 @@
 		C36CC8431EF0F8A200AA1804 /* TestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				C33779182057F1D6009E9EC8 /* Protocol */,
 				C33779112057879C009E9EC8 /* Category */,
 				C38F6318205660AF00519C04 /* Block */,
 				C35B6E552053ED840097BF8B /* Polymorphism */,
@@ -537,6 +555,7 @@
 				C33341241FE3D3D500459814 /* mainView.m in Sources */,
 				C35B6E4E2053D9280097BF8B /* InheritanceVC.m in Sources */,
 				C36CC8491EF0F8A200AA1804 /* AppDelegate.m in Sources */,
+				C337791E2057FB58009E9EC8 /* ProtocolVC.m in Sources */,
 				C35B6E4A2053B5590097BF8B /* EncapsulationVC.m in Sources */,
 				C33779142057892C009E9EC8 /* Person+Relations.m in Sources */,
 				C36CC8461EF0F8A200AA1804 /* main.m in Sources */,
@@ -547,6 +566,7 @@
 				C35B6E582053EDC60097BF8B /* Shape.m in Sources */,
 				C38F631F205661E400519C04 /* SampleClass.m in Sources */,
 				C37084FE1FF4B8D900C3A2A2 /* AlphaNumericSortVC.m in Sources */,
+				C337791B2057F785009E9EC8 /* Print.m in Sources */,
 				C35B6E5E2053EDF70097BF8B /* Rectangle.m in Sources */,
 				C35B6E542053D9640097BF8B /* Employee.m in Sources */,
 			);
