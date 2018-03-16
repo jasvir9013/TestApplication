@@ -15,5 +15,6 @@
 
 {
     ScanReceiptModel *result;
+    UIView *overlayView;
 }
 @end

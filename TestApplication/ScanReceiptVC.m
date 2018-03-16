@@ -27,10 +27,10 @@
 
 -(void)recognizeImageWithTesseract:(UIImage *)image
 {
-    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng+fra"];
+    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng"];
     tesseract.delegate = self;
-   // tesseract.charWhitelist = @"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:/-.%";
-   // tesseract.charBlacklist = @"*";
+    tesseract.charWhitelist = @"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:/-.%";
+   // tesseract.charBlacklist = @"**";
     tesseract.pageSegmentationMode = G8PageSegmentationModeAuto ;
     tesseract.image = image.g8_blackAndWhite;
     [tesseract analyseLayout];
@@ -105,10 +105,10 @@
             imgPicker.sourceType = UIImagePickerControllerSourceTypeCamera;
           //imgPicker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
             
-            UIView *overlayView = [[UIView alloc]initWithFrame:CGRectMake(10, 50, imgPicker.view.frame.size.width-20, 480)];
+         overlayView = [[UIView alloc]initWithFrame:CGRectMake(10, 50, imgPicker.view.frame.size.width-20, 480)];
             overlayView.backgroundColor = [UIColor lightGrayColor];
             overlayView.alpha = 0.4;
-            [imgPicker setCameraOverlayView:overlayView];
+         //   [imgPicker setCameraOverlayView:overlayView];
             
             [self presentViewController:imgPicker animated:YES completion:nil];
         }
@@ -129,9 +129,12 @@
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    
         UIImage *image = info[UIImagePickerControllerOriginalImage];
+          //  UIImage *image = info[UIImagePickerControllerEditedImage];
         [picker dismissViewControllerAnimated:YES completion:nil];
     // Give Tesseract the filtered image
+    
         [self recognizeImageWithTesseract:image];
 }
 
