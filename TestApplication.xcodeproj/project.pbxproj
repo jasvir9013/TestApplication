@@ -10,9 +10,6 @@
 		A166565C73D068576A8C7B75 /* libPods-TestApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF2E7E5545D4172A0852AC1 /* libPods-TestApplication.a */; };
 		C31120D8205B9049008644FF /* SingletonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C31120D7205B9049008644FF /* SingletonVC.m */; };
 		C31120DB205B9072008644FF /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C31120DA205B9072008644FF /* MyManager.m */; };
-		C327FAC520625AAD00600C32 /* TestApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C327FAC320625AAD00600C32 /* TestApplication.xcdatamodeld */; };
-		C327FAC9206270BC00600C32 /* DeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C327FAC8206270BC00600C32 /* DeviceVC.m */; };
-		C327FACC206270E700600C32 /* DetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C327FACB206270E700600C32 /* DetailsVC.m */; };
 		C33341241FE3D3D500459814 /* mainView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33341231FE3D3D500459814 /* mainView.m */; };
 		C3356B52200734230052D1D1 /* ScanReceiptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3356B51200734230052D1D1 /* ScanReceiptVC.m */; };
 		C3356B542007701E0052D1D1 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = C3356B532007701E0052D1D1 /* tessdata */; };
@@ -70,11 +67,6 @@
 		C31120D7205B9049008644FF /* SingletonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonVC.m; sourceTree = "<group>"; };
 		C31120D9205B9072008644FF /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
 		C31120DA205B9072008644FF /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
-		C327FAC420625AAD00600C32 /* TestApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestApplication.xcdatamodel; sourceTree = "<group>"; };
-		C327FAC7206270BC00600C32 /* DeviceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceVC.h; sourceTree = "<group>"; };
-		C327FAC8206270BC00600C32 /* DeviceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceVC.m; sourceTree = "<group>"; };
-		C327FACA206270E700600C32 /* DetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsVC.h; sourceTree = "<group>"; };
-		C327FACB206270E700600C32 /* DetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsVC.m; sourceTree = "<group>"; };
 		C33341221FE3D3D500459814 /* mainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainView.h; sourceTree = "<group>"; };
 		C33341231FE3D3D500459814 /* mainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainView.m; sourceTree = "<group>"; };
 		C3356B50200734230052D1D1 /* ScanReceiptVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanReceiptVC.h; sourceTree = "<group>"; };
@@ -171,17 +163,6 @@
 				C31120DA205B9072008644FF /* MyManager.m */,
 			);
 			name = Singleton;
-			sourceTree = "<group>";
-		};
-		C327FAC62062709300600C32 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				C327FAC7206270BC00600C32 /* DeviceVC.h */,
-				C327FAC8206270BC00600C32 /* DeviceVC.m */,
-				C327FACA206270E700600C32 /* DetailsVC.h */,
-				C327FACB206270E700600C32 /* DetailsVC.m */,
-			);
-			name = CoreData;
 			sourceTree = "<group>";
 		};
 		C3356B4F200733FB0052D1D1 /* Scan */ = {
@@ -290,7 +271,6 @@
 		C36CC8381EF0F8A200AA1804 = {
 			isa = PBXGroup;
 			children = (
-				C327FAC320625AAD00600C32 /* TestApplication.xcdatamodeld */,
 				C36CC8431EF0F8A200AA1804 /* TestApplication */,
 				C36CC85D1EF0F8A200AA1804 /* TestApplicationTests */,
 				C36CC8681EF0F8A200AA1804 /* TestApplicationUITests */,
@@ -313,7 +293,6 @@
 		C36CC8431EF0F8A200AA1804 /* TestApplication */ = {
 			isa = PBXGroup;
 			children = (
-				C327FAC62062709300600C32 /* CoreData */,
 				C31120D5205B900E008644FF /* Singleton */,
 				C33779182057F1D6009E9EC8 /* Protocol */,
 				C33779112057879C009E9EC8 /* Category */,
@@ -595,10 +574,8 @@
 				C33341241FE3D3D500459814 /* mainView.m in Sources */,
 				C35B6E4E2053D9280097BF8B /* InheritanceVC.m in Sources */,
 				C36CC8491EF0F8A200AA1804 /* AppDelegate.m in Sources */,
-				C327FAC520625AAD00600C32 /* TestApplication.xcdatamodeld in Sources */,
 				C337791E2057FB58009E9EC8 /* ProtocolVC.m in Sources */,
 				C35B6E4A2053B5590097BF8B /* EncapsulationVC.m in Sources */,
-				C327FAC9206270BC00600C32 /* DeviceVC.m in Sources */,
 				C33779142057892C009E9EC8 /* Person+Relations.m in Sources */,
 				C36CC8461EF0F8A200AA1804 /* main.m in Sources */,
 				C35B6E512053D93F0097BF8B /* Person.m in Sources */,
@@ -610,7 +587,6 @@
 				C37084FE1FF4B8D900C3A2A2 /* AlphaNumericSortVC.m in Sources */,
 				C337791B2057F785009E9EC8 /* Print.m in Sources */,
 				C31120DB205B9072008644FF /* MyManager.m in Sources */,
-				C327FACC206270E700600C32 /* DetailsVC.m in Sources */,
 				C35B6E5E2053EDF70097BF8B /* Rectangle.m in Sources */,
 				C35B6E542053D9640097BF8B /* Employee.m in Sources */,
 			);
@@ -867,19 +843,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C327FAC320625AAD00600C32 /* TestApplication.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C327FAC420625AAD00600C32 /* TestApplication.xcdatamodel */,
-			);
-			currentVersion = C327FAC420625AAD00600C32 /* TestApplication.xcdatamodel */;
-			path = TestApplication.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C36CC8391EF0F8A200AA1804 /* Project object */;
 }

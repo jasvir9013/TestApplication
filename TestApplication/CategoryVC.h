@@ -16,3 +16,5 @@
 
 @interface CategoryVC()
 -(void)privateMethod;
+
+@end
