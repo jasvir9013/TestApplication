@@ -6,7 +6,6 @@
 //  Copyright © 2018 Administrator. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
